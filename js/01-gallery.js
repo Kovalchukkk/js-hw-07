@@ -1,9 +1,10 @@
 import { galleryItems } from "./gallery-items.js";
 // Change code below this line
 
-console.log(galleryItems);
+const galleryContainer = document.querySelector(".gallery");
+const imagesMarkup = createMarkup(galleryItems);
 
-console.log(createMarkup(galleryItems));
+console.log(galleryItems);
 
 function createMarkup(galleryItems) {
   return galleryItems

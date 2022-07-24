@@ -4,6 +4,8 @@ import { galleryItems } from "./gallery-items.js";
 const galleryContainer = document.querySelector(".gallery");
 const imagesMarkup = createMarkup(galleryItems);
 
+galleryContainer.insertAdjacentHTML("afterbegin", imagesMarkup);
+
 console.log(galleryItems);
 
 function createMarkup(galleryItems) {
